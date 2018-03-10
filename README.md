@@ -2,7 +2,7 @@
 **A simple library to transmit a simplified version of the IR remote protocol**
 
 ## Use case scenario
-The Library is intended to be used in time critical systems where the programmer can not afford to lock hardware resources. For example the simple protocol will allow the use of a single microcontroller for realtime controllers. A feedback controller in a drone can be simultaneously used to identify basic commands signals.
+The Library is intended to be used in time critical systems where the programmer can not afford to lock hardware resources. For example, the simple protocol will allow the use of a single microcontroller for realtime controllers. A feedback controller in a drone can be simultaneously used to identify basic commands signals.
 
 Please note that this Library is expected to be used with the related **infraredReceiver** library which is designed to handle the signal detection of the transmitted signal.
 
@@ -18,6 +18,8 @@ myTransmitter.init(); //Performs hardware configurations
 ## Library Methods
 
 **To set the signal type to be transmitted:**
+Different signal types can be transmitted using this library. The __setSignalIdentity__ method allows the user to define the type of the signal to be transmitted. In the current state the library supports two types of signals 1 and 2, however the number of different signal types can easily be increased my making minor modifications in the source code.
+
 ```
 myTransmitter.setSignalIdentity(2);
 ```
