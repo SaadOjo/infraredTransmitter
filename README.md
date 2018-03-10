@@ -18,20 +18,20 @@ myTransmitter.init(); //Performs hardware configurations
 
 ## Library Methods
 
-**to set the signal type to be transmitted:**
+**To set the signal type to be transmitted:**
 ```
 myTransmitter.setSignalIdentity(2);
 ```
-**to transmit the signal:**
+**To transmit the signal:**
 
-Please note that the library can only toggle the output of the transmitter each time the _transmit_ method is called.
+Please note that the library can only toggle the output of the transmitter each time the __transmit__ method is called.
 In order to meet the signal specifications the transmit method must be called once every 20 ms. In other words, the main loop of the program must run at at least 50 Hz.
 ```
 myTransmitter.transmit(); // Should be called every loop
 ```
-**to turn on the led:**
+**To turn on the led:**
 
-When it is desired to keep the led on all the time, the _alwaysOn_ method should be called. This method needs to be called only once. After this method is called the led will remain on as long as the microcontroller remains powered on.
+When it is desired to keep the led on all the time, the __alwaysOn__ method should be called. This method needs to be called only once. After this method is called the led will remain on as long as the microcontroller remains powered on.
 ```
 myTransmitter.alwaysOn(); // Only needs to be called once
 ```
