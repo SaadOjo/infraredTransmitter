@@ -1,0 +1,23 @@
+#######################################
+# Syntax Coloring Map For infraredTransmitter
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+infraredTransmitter	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+init 		`		KEYWORD2
+setSignalIdentity 	KEYWORD2
+getSignalIdentity 	KEYWORD2
+transmit 			KEYWORD2
+alwaysOn 			KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
