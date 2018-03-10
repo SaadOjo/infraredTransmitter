@@ -18,6 +18,7 @@ myTransmitter.init(); //Performs hardware configurations
 ## Library Methods
 
 **To set the signal type to be transmitted:**
+
 Different signal types can be transmitted using this library. The __setSignalIdentity__ method allows the user to define the type of the signal to be transmitted. In the current state the library supports two types of signals 1 and 2, however the number of different signal types can easily be increased my making minor modifications in the source code.
 
 ```
