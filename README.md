@@ -1,11 +1,10 @@
 # infraredTransmitter Library
-A simple library to transmit a simplified version of the IR remote protocol
+**A simple library to transmit a simplified version of the IR remote protocol**
 
+## Use case scenario
+The Library is intended to be used in time critical systems where the programmer can not afford to lock hardware resources. For example the simple protocol will allow the use of a single microcontroller for realtime controllers. A feedback controller in a drone can be simultaneously used to identify basic commands signals.
 
-The Library is intended to be used in time critical systems where the programmer can not afford to lock hardware resources. 
-An example of such a system can be a realtime controller used in drones where basic commands signals need to be identified.
-
-The Library is expected to be used with the related **infraredReceiver** library.
+Please note that this Library is expected to be used with the related **infraredReceiver** library which is designed to handle the signal detection of the transmitted signal.
 
 Since this library utilises the timer 1 of the arduino UNO the transmitter can only be attached to digital pin 9 and 10,
 for this reason, Initialise the transmitter with argument 9 or 10.
